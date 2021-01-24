@@ -12,7 +12,7 @@ var audio1=new Audio('pristine.mp3');
 const append2=(message,position)=>{
        const messageElement=document.createElement('div');
        messageElement.innerText=message;
-       messageElement.classList.add('message');
+       messageElement.classList.add('message'); //The 'message' is constant  as it is already defined , it is not equal to the coming message content
        messageElement.classList.add(position);
        messageContainer.append(messageElement); //This append will add messageElement
        if(position=='left')
